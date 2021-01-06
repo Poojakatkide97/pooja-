@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--navbar-height: 59px;
+	}
+
+/* Navigation Bar */
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+}
+/*Navigation Bar : logo and image*/
+#logo{
+	margin: 20px 25px;
+	height: 100px;
+}
+#logo img{
+
+	height: 130px;
+	margin: 10px 10px;
+
+}
+
+/*Navigation Bar : list styling*/
+
+#navbar{
+	font-family: "Yeseva One script=latin rev=1";
+	position: relative;
+}
+
+#navbar ul{
+	display: flex;
+}
+
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.7;
+}
+
+#navbar ul li{
+	/*color: white;*/
+	list-style: none;
+	font-size: 1.3rem;
+}
+
+#navbar ul li a{
+	color: white;
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+#navbar ul li a:hover{
+	color: black;
+	background-color: white; 
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+/*home section*/
+
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	height: 600px;
+	justify-content: center;
+	align-items: center;
+}
+
+#home::before{
+	content: "";
+	background: url("back1.jpg") no-repeat center center/cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.89;
+}
+#home h1{
+	color: white;
+	text-align: center;
+}
+#home p{
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+}
+/* services section */
+
+#services{
+	font-family: "Lobster script=latin rev=1";
+	margin: 34px;
+	display: flex;
+}
+#services .box{
+	border: 2px solid brown;
+	padding: 34px;
+	margin: 2px 20px;
+	border-radius: 28px;
+	background: #f2f2f2;
+	margin-bottom: 20px;
+}
+#services .box img{
+	height: 150px;
+	margin: auto;
+	display: block;
+}
+#services .box p{
+	font-family: "Great Vibes script=latin rev=1";
+
+}
+#services .box{
+	border: 2px solid brown;
+}
+
+/* client section */
+#client-section{
+	position: relative;
+	height: 450px;
+}
+
+#client-section::before{
+	content: "";
+	position: absolute;
+	background: url(pic6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.8;
+}
+#client-section h1{
+	height: 150px;
+	font-size: 60px;
+	font-family: "Lobster script=latin rev=1";
+}
+
+#clients{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.client-item{
+	padding: 34px;
+
+}
+
+#clients img{
+	height: 200px;
+
+}
+/* Contact us*/
+#contact{
+	height: 100px;
+	background-image: url(phone.jpg) no-repeat center center/cover;
+	position: relative;
+
+}
+#contact::before{
+	content: "";
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+	background-image: url(phone.jpg) no-repeat center center/cover;
+
+}
+#contact-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-size: 1.1rem;
+}
+#contact-box form{
+	width: 40%;
+}
+
+#contact-box label{
+	font-size: 1.3rem;
+	font-family: 'Bree Serif', serif;
+}
+
+
+footer{
+	background: black;
+	color: white;
+	padding: 9px 20px;
+}
+/* utility classes */
+.h-primary{
+	font-family: "Alfa Slab One script=latin rev=1";
+	font-family: 'Anton', sans-serif;
+	/*font-family: 'Bree Serif', serif;*/
+	font-size: 2.8rem;
+	padding: 12px;
+}
+
+.h-secondary{
+	font-family: "Alfa Slab One script=latin rev=1";
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.3rem;
+	padding: 12px;
+}
+.btn{
+	padding: 6px 20px;
+	border: 2px solid white;
+	background-color: brown;
+	color: white;
+	margin: 17px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.center{
+	text-align: center;
+}
