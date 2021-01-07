@@ -1,242 +1,193 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-:root{
-	--navbar-height: 59px;
-	}
 
-/* Navigation Bar */
-#navbar{
-	display: flex;
-	align-items: center;
-	position: relative;
-	top: 0px;
-}
-/*Navigation Bar : logo and image*/
-#logo{
-	margin: 20px 25px;
-	height: 100px;
-}
-#logo img{
+*{margin: 0; padding: 0; box-sizing: border-box; }
 
-	height: 130px;
-	margin: 10px 10px;
-
-}
-
-/*Navigation Bar : list styling*/
-
-#navbar{
-	font-family: "Yeseva One script=latin rev=1";
-	position: relative;
-}
-
-#navbar ul{
-	display: flex;
-}
-
-#navbar::before{
-	content: "";
-	background-color: black;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	opacity: 0.7;
-}
-
-#navbar ul li{
-	/*color: white;*/
-	list-style: none;
-	font-size: 1.3rem;
-}
-
-#navbar ul li a{
-	color: white;
-	display: block;
-	padding: 3px 22px;
-	border-radius: 20px;
-	text-decoration: none;
-}
-
-#navbar ul li a:hover{
-	color: black;
-	background-color: white; 
-	display: block;
-	padding: 3px 22px;
-	border-radius: 20px;
-	text-decoration: none;
-}
-
-/*home section*/
-
-#home{
-	display: flex;
-	flex-direction: column;
-	padding: 3px 200px;
-	height: 600px;
-	justify-content: center;
-	align-items: center;
-}
-
-#home::before{
-	content: "";
-	background: url("back1.jpg") no-repeat center center/cover;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	opacity: 0.89;
-}
-#home h1{
-	color: white;
-	text-align: center;
-}
-#home p{
-	color: white;
-	text-align: center;
-	font-size: 1.5rem;
-}
-/* services section */
-
-#services{
-	font-family: "Lobster script=latin rev=1";
-	margin: 34px;
-	display: flex;
-}
-#services .box{
-	border: 2px solid brown;
-	padding: 34px;
-	margin: 2px 20px;
-	border-radius: 28px;
-	background: #f2f2f2;
-	margin-bottom: 20px;
-}
-#services .box img{
-	height: 150px;
-	margin: auto;
-	display: block;
-}
-#services .box p{
-	font-family: "Great Vibes script=latin rev=1";
-
-}
-#services .box{
-	border: 2px solid brown;
-}
-
-/* client section */
-#client-section{
-	position: relative;
-	height: 450px;
-}
-
-#client-section::before{
-	content: "";
-	position: absolute;
-	background: url(pic6.jpg);
+.header{
+	background-image: url("web1.jpeg");
 	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	opacity: 0.8;
-}
-#client-section h1{
-	height: 150px;
-	font-size: 60px;
-	font-family: "Lobster script=latin rev=1";
-}
-
-#clients{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.client-item{
-	padding: 34px;
+	background-size: 100% 100%;
 
 }
 
-#clients img{
-	height: 200px;
+.nav-item a{
+	color: black;
+	font-weight: bold;
 
 }
-/* Contact us*/
-#contact{
-	height: 100px;
-	background-image: url(phone.jpg) no-repeat center center/cover;
-	position: relative;
+a{ text-decoration: none; }
+
+	
+li{list-style: none;}
+
+.p{
+	color: black ;
+	font-size: bold;
 
 }
-#contact::before{
+i{
+	color: #2fccd0;
+}
+.navbar:before{
 	content: "";
-	position: relative;
-	width: 100%;
-	height: 100%;
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	right: 0;
+	left: 0;
+	opacity: 0.3;
 	z-index: -1;
-	opacity: 0.7;
-	background-image: url(phone.jpg) no-repeat center center/cover;
-
+	background: linear-gradient(to right #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
 }
-#contact-box{
+
+
+
+
+
+.header-buttons a{
+	border: 5px solid black;
+	border-radius: 100px;
+	text-align: center;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline color: white;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: sans-serif;
+	line-height: 1.4;
+	
+	
+}
+.header-buttons a:hover{
+	color: green;
+	background: white;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.header-section{
+	color: black;
+	text-align: center;
+	padding: 50px;
+}
+
+
+.header-extra-div h2{
+	font-size: 0.9rem;
+	margin: 20px 0 15px 0;
+	font-weight: bold;
+	line-height: 1.1;
+	word-spacing: 4px;
+	text-align: center;
+}
+
+
+.header-extra-div{
+	width: 100%; height: auto;
+	margin: 100px 0;
+	text-align: center;
+}
+.extra-div{
+	background: white;
+	border: medium none;
+	padding: 50px!important;
+	border-radius: 20px;
+	transition: 0.6s;
+}
+.extra-div:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	transform: translateY(-30px);
+	
+}
+.serviceoffers{
+	background: #f7f7f9;
+	padding: 50px 0;
+	margin-bottom: 50px;
+}
+.headings{
+	margin-bottom: 50px;
+}
+
+.headings h1{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.names h1{
+	color: #2e2e2e;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.service-icons{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 34px;
 }
-#contact-box input,
-#contact-box textarea{
-	width: 100%;
-	padding: 0.5rem;
-	border-radius: 9px;
-	font-size: 1.1rem;
+.progress{
+	height: 0.6rem!important;
+	margin-bottom: 25px!important;
+	background: #606060;
 }
-#contact-box form{
-	width: 40%;
-}
+.project-work{
+	margin: 100px 0;
 
-#contact-box label{
-	font-size: 1.3rem;
-	font-family: 'Bree Serif', serif;
 }
-
-
-footer{
-	background: black;
-	color: white;
-	padding: 9px 20px;
-}
-/* utility classes */
-.h-primary{
-	font-family: "Alfa Slab One script=latin rev=1";
-	font-family: 'Anton', sans-serif;
-	/*font-family: 'Bree Serif', serif;*/
-	font-size: 2.8rem;
-	padding: 12px;
-}
-
-.h-secondary{
-	font-family: "Alfa Slab One script=latin rev=1";
-	font-family: 'Dancing Script', cursive;
-	font-size: 2.3rem;
-	padding: 12px;
-}
-.btn{
-	padding: 6px 20px;
-	border: 2px solid white;
-	background-color: brown;
-	color: white;
-	margin: 17px;
-	font-size: 1.5rem;
-	border-radius: 10px;
-	cursor: pointer;
-}
-.center{
+.project-work h1{
+	font-size: 2rem;
 	text-align: center;
+}
+.pricing{
+	width: 100%;
+	height: 100vh;
+	padding: 50px;
+	position: relative;
+}
+
+.pricing:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	right: 0;
+	left: 0;
+	z-index: -1;
+	background: linear-gradient(330deg #16c9fc 55%, #fff 0%);
+}
+
+.contactus{
+	width: 100%;
+	height: 1000vh;
+	padding: 80px;
+	position: relative;
+}
+
+
+	
+.form-button button{
+	border: 1px solid #50d1c0;
+	border-radius: 100px;
+	text-align: center;
+	margin: 0 5px;
+	outline: none;
+	padding: 12px 35px;
+	color: #50d1c0;
+	background: transparent;
+	line-height: 1.4;
+}
+
+
+.contactus:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	right: 0;
+	left: 0;
+	z-index: -1;
+	background: linear-gradient(330deg #16c9fc 55%, #fff 0%);
+}
+
+form:hover .form-button button{
+	background: #fff;
+	color: #50d1c0;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0);
 }
